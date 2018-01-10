@@ -9,6 +9,8 @@ class IngredientsController < ApplicationController
 
     if @ingredient.save
       redirect_to ingredient_path(@ingredient)
+    else
+      render 'new'
     end
   end
 
