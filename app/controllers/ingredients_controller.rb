@@ -24,6 +24,10 @@ class IngredientsController < ApplicationController
     redirect_to ingredient_path(@ingredient)
   end
 
+  def show
+    @ingredient = Ingredient.find(params[:id])
+  end
+
   private
 
   def ingredient_params
