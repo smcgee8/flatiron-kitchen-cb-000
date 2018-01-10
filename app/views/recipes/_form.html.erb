@@ -2,7 +2,7 @@
   <%= f.label :name %>
   <%= f.text_field :name %><br>
 
-  <%= f.collection_select :ingredients, Ingredient.all, :id, :name %>
+  <%= f.collection_select :ingredients, Ingredient.all, :id, :name %><br>
 
   <%= f.submit %>
 <% end %>
